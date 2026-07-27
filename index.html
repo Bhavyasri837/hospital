@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Meridian Health — Premium Hospital &amp; Specialist Care</title>
+<meta name="description" content="Meridian Health is a premium multi-specialty hospital offering world-class doctors, 24/7 emergency care, health packages, and same-day appointments.">
+<meta name="theme-color" content="#0B6FB0">
+
+<!-- Open Graph -->
+<meta property="og:title" content="Meridian Health — Premium Hospital & Specialist Care">
+<meta property="og:description" content="Book appointments with leading specialists. 24/7 emergency care. Modern diagnostics under one roof.">
+<meta property="og:type" content="website">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- ============ LOADING SCREEN ============ -->
+<div id="loading-screen" aria-hidden="true">
+  <div class="loader-mark">
+    <svg width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path id="loader-pulse" d="M2 30H14L20 14L28 42L34 22L38 30H54" stroke="url(#loaderGrad)" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+      <defs>
+        <linearGradient id="loaderGrad" x1="0" y1="0" x2="56" y2="0">
+          <stop offset="0" stop-color="#0B6FB0"/>
+          <stop offset="1" stop-color="#3FD0E0"/>
+        </linearGradient>
+      </defs>
+    </svg>
+  </div>
+  <p class="loader-label">Meridian Health</p>
+</div>
+
+<a class="skip-link" href="#main-content">Skip to content</a>
+
+<!-- ============ NAVBAR ============ -->
+<header class="navbar" id="navbar">
+  <nav class="nav-inner" aria-label="Primary">
+    <a href="#top" class="brand" aria-label="Meridian Health home">
+      <svg width="30" height="30" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <path d="M2 30H14L20 14L28 42L34 22L38 30H54" stroke="var(--blue-600)" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+      <span>Meridian <em>Health</em></span>
+    </a>
+
+    <ul class="nav-links" id="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#doctors">Doctors</a></li>
+      <li><a href="#departments">Departments</a></li>
+      <li><a href="#packages">Packages</a></li>
+      <li><a href="#testimonials">Stories</a></li>
+      <li><a href="#faq">FAQ</a></li>
+      <li><a href="#blog">Blog</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+
+    <div class="nav-actions">
+      <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode" aria-pressed="false">
+        <svg class="icon-sun" width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="12" r="4.2" stroke="currentColor" stroke-width="1.8"/><path d="M12 2.5v2.6M12 18.9v2.6M4.4 4.4l1.8 1.8M17.8 17.8l1.8 1.8M2.5 12h2.6M18.9 12h2.6M4.4 19.6l1.8-1.8M17.8 6.2l1.8-1.8" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+        <svg class="icon-moon" width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M20 14.5A8.5 8.5 0 1 1 9.5 4a7 7 0 0 0 10.5 10.5Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg>
+      </button>
+      <a href="#appointment" class="btn btn-primary btn-sm">Book Appointment</a>
+      <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="nav-links">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+</header>
+
+<main id="main-content">
+
+<!-- ============ HERO ============ -->
+<section class="hero" id="top">
+  <div class="hero-bg" aria-hidden="true"></div>
+  <div class="hero-inner">
+    <div class="hero-copy reveal">
+      <span class="eyebrow">Multi-specialty hospital · Est. 1998</span>
+      <h1>Care that listens.<br>Medicine that <span class="grad-text">leads.</span></h1>
+      <p class="hero-sub">Meridian Health brings together award-winning specialists, advanced diagnostics, and calm, human-centred care — all under one roof, available around the clock.</p>
+      <div class="hero-cta">
+        <a href="#appointment" class="btn btn-primary">Book an Appointment</a>
+        <a href="#emergency" class="btn btn-ghost">
+          <span class="pulse-dot" aria-hidden="true"></span> Emergency Line
+        </a>
+      </div>
+      <div class="hero-trust">
+        <div class="trust-item"><strong>4.9/5</strong><span>Patient rating</span></div>
+        <div class="trust-item"><strong>120+</strong><span>Specialist doctors</span></div>
+        <div class="trust-item"><strong>24/7</strong><span>Emergency care</span></div>
+      </div>
+    </div>
+
+    <div class="hero-visual reveal" data-reveal-delay="120">
+      <div class="glass-card appointment-preview">
+        <div class="ap-head">
+          <span class="ap-dot"></span>
+          <p>Next available slot</p>
+        </div>
+        <h3>Dr. Amara Ellison</h3>
+        <p class="ap-role">Cardiology · Senior Consultant</p>
+        <div class="ap-slot">
+          <span>Today</span>
+          <strong id="hero-time">4:30 PM</strong>
+        </div>
+        <a href="#appointment" class="btn btn-primary btn-sm btn-full">Reserve this slot</a>
+      </div>
+      <svg class="ecg-signature" viewBox="0 0 420 120" fill="none" aria-hidden="true">
+        <path id="ecg-path" d="M0 60H60L78 20L98 100L118 40L134 60H180L198 30L216 90L234 50L250 60H420"
+          stroke="url(#ecgGrad)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+        <defs>
+          <linearGradient id="ecgGrad" x1="0" y1="0" x2="420" y2="0">
+            <stop offset="0" stop-color="#0B6FB0" stop-opacity="0.15"/>
+            <stop offset="0.5" stop-color="#0B6FB0"/>
+            <stop offset="1" stop-color="#3FD0E0"/>
+          </linearGradient>
+        </defs>
+      </svg>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ABOUT ============ -->
+<section class="section about" id="about">
+  <div class="container about-grid">
+    <div class="about-visual reveal">
+      <div class="about-frame">
+        <div class="about-block block-a"></div>
+        <div class="about-block block-b"></div>
+        <div class="glass-card float-card">
+          <p class="fc-label">Accredited</p>
+          <strong>NABH &amp; JCI Certified Facility</strong>
+        </div>
+      </div>
+    </div>
+    <div class="about-copy reveal">
+      <span class="eyebrow">About Meridian</span>
+      <h2>Twenty-five years of care built around the patient, not the process.</h2>
+      <p>We started Meridian Health with one belief: hospitals should feel calmer than the world outside them. Today that means private consultation suites, transparent pricing, and clinical teams who coordinate your care from first symptom to full recovery.</p>
+      <ul class="about-list">
+        <li><span class="check">✓</span> Integrated diagnostics &amp; same-day results</li>
+        <li><span class="check">✓</span> Dedicated care coordinator for every patient</li>
+        <li><span class="check">✓</span> 14 specialty centres under one campus</li>
+      </ul>
+      <a href="#departments" class="link-arrow">Explore our departments →</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ STATISTICS ============ -->
+<section class="section stats" id="stats">
+  <div class="container stats-grid reveal">
+    <div class="stat-item">
+      <strong class="counter" data-target="120" data-suffix="+">0</strong>
+      <span>Specialist Doctors</span>
+    </div>
+    <div class="stat-item">
+      <strong class="counter" data-target="48000" data-suffix="+">0</strong>
+      <span>Patients Treated / Year</span>
+    </div>
+    <div class="stat-item">
+      <strong class="counter" data-target="99" data-suffix="%">0</strong>
+      <span>Patient Satisfaction</span>
+    </div>
+    <div class="stat-item">
+      <strong class="counter" data-target="24" data-suffix="/7">0</strong>
+      <span>Emergency Availability</span>
+    </div>
+  </div>
+</section>
+
+<!-- ============ DOCTORS ============ -->
+<section class="section" id="doctors">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">Meet the team</span>
+      <h2>Specialists trusted with the moments that matter.</h2>
+      <p>Every consultant at Meridian is board-certified and trained at leading institutions worldwide.</p>
+    </div>
+
+    <div class="doctor-grid">
+      <article class="doctor-card reveal">
+        <div class="doctor-photo dp-1" aria-hidden="true"></div>
+        <div class="doctor-body">
+          <h3>Dr. Amara Ellison</h3>
+          <p class="doctor-role">Cardiology · Senior Consultant</p>
+          <p class="doctor-meta">18 yrs experience · Harvard Medical</p>
+          <div class="doctor-foot">
+            <span class="rating">★ 4.9</span>
+            <a href="#appointment" class="link-arrow-sm">Book →</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="doctor-card reveal" data-reveal-delay="90">
+        <div class="doctor-photo dp-2" aria-hidden="true"></div>
+        <div class="doctor-body">
+          <h3>Dr. Rohan Kapoor</h3>
+          <p class="doctor-role">Neurology · Head of Department</p>
+          <p class="doctor-meta">22 yrs experience · Johns Hopkins</p>
+          <div class="doctor-foot">
+            <span class="rating">★ 4.8</span>
+            <a href="#appointment" class="link-arrow-sm">Book →</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="doctor-card reveal" data-reveal-delay="180">
+        <div class="doctor-photo dp-3" aria-hidden="true"></div>
+        <div class="doctor-body">
+          <h3>Dr. Leila Farouk</h3>
+          <p class="doctor-role">Pediatrics · Senior Consultant</p>
+          <p class="doctor-meta">15 yrs experience · Imperial College</p>
+          <div class="doctor-foot">
+            <span class="rating">★ 5.0</span>
+            <a href="#appointment" class="link-arrow-sm">Book →</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="doctor-card reveal" data-reveal-delay="270">
+        <div class="doctor-photo dp-4" aria-hidden="true"></div>
+        <div class="doctor-body">
+          <h3>Dr. Marcus Chen</h3>
+          <p class="doctor-role">Orthopaedics · Consultant Surgeon</p>
+          <p class="doctor-meta">12 yrs experience · Stanford Medicine</p>
+          <div class="doctor-foot">
+            <span class="rating">★ 4.9</span>
+            <a href="#appointment" class="link-arrow-sm">Book →</a>
+          </div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ DEPARTMENTS ============ -->
+<section class="section section-tint" id="departments">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">Departments</span>
+      <h2>Fourteen specialty centres, one connected campus.</h2>
+      <p>From routine checkups to complex surgery, every department shares the same records, labs and care standards.</p>
+    </div>
+
+    <div class="dept-grid">
+      <article class="dept-card reveal">
+        <div class="dept-icon">❤️</div>
+        <h3>Cardiology</h3>
+        <p>Heart screening, catheterisation and rehabilitation programs.</p>
+      </article>
+      <article class="dept-card reveal" data-reveal-delay="60">
+        <div class="dept-icon">🧠</div>
+        <h3>Neurology</h3>
+        <p>Advanced imaging and treatment for brain &amp; nervous system.</p>
+      </article>
+      <article class="dept-card reveal" data-reveal-delay="120">
+        <div class="dept-icon">🦴</div>
+        <h3>Orthopaedics</h3>
+        <p>Joint replacement, sports medicine and physiotherapy.</p>
+      </article>
+      <article class="dept-card reveal" data-reveal-delay="180">
+        <div class="dept-icon">👶</div>
+        <h3>Pediatrics</h3>
+        <p>Newborn to adolescent care in a calm, dedicated wing.</p>
+      </article>
+      <article class="dept-card reveal" data-reveal-delay="240">
+        <div class="dept-icon">🩺</div>
+        <h3>General Medicine</h3>
+        <p>Preventive care, diagnostics and chronic condition management.</p>
+      </article>
+      <article class="dept-card reveal" data-reveal-delay="300">
+        <div class="dept-icon">🔬</div>
+        <h3>Oncology</h3>
+        <p>Precision diagnostics and multidisciplinary cancer care.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ EMERGENCY ============ -->
+<section class="emergency" id="emergency">
+  <div class="container emergency-inner reveal">
+    <div class="emergency-copy">
+      <span class="eyebrow eyebrow-light">Emergency services</span>
+      <h2>Every second is triaged. Every case is ready before you arrive.</h2>
+      <p>Our emergency department is staffed around the clock with trauma specialists, a dedicated ambulance fleet, and direct ICU escalation.</p>
+    </div>
+    <div class="emergency-cta">
+      <a href="tel:+18005551234" class="btn btn-white">
+        <span class="pulse-dot pulse-dot-dark" aria-hidden="true"></span> Call Emergency: +1 (800) 555-1234
+      </a>
+      <p class="emergency-note">Available 24 hours · 365 days a year</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ BOOK APPOINTMENT ============ -->
+<section class="section" id="appointment">
+  <div class="container appt-grid">
+    <div class="appt-copy reveal">
+      <span class="eyebrow">Book appointment</span>
+      <h2>Reserve your consultation in under a minute.</h2>
+      <p>Choose your specialist and preferred time. Our care coordinator will confirm by SMS and email within the hour.</p>
+      <ul class="about-list">
+        <li><span class="check">✓</span> No waiting-room queues — arrive at your slot</li>
+        <li><span class="check">✓</span> Free rescheduling up to 2 hours before</li>
+        <li><span class="check">✓</span> Insurance &amp; direct billing accepted</li>
+      </ul>
+    </div>
+
+    <form class="glass-card appt-form reveal" id="appointment-form" data-reveal-delay="100" novalidate>
+      <h3>Appointment details</h3>
+
+      <div class="form-row">
+        <label for="f-name">Full name</label>
+        <input id="f-name" name="name" type="text" placeholder="Jordan Blake" required autocomplete="name">
+        <span class="field-error" data-for="f-name"></span>
+      </div>
+
+      <div class="form-row">
+        <label for="f-email">Email address</label>
+        <input id="f-email" name="email" type="email" placeholder="you@email.com" required autocomplete="email">
+        <span class="field-error" data-for="f-email"></span>
+      </div>
+
+      <div class="form-row-split">
+        <div class="form-row">
+          <label for="f-phone">Phone number</label>
+          <input id="f-phone" name="phone" type="tel" placeholder="+1 (___) ___-____" required autocomplete="tel">
+          <span class="field-error" data-for="f-phone"></span>
+        </div>
+        <div class="form-row">
+          <label for="f-date">Preferred date</label>
+          <input id="f-date" name="date" type="date" required>
+          <span class="field-error" data-for="f-date"></span>
+        </div>
+      </div>
+
+      <div class="form-row">
+        <label for="f-dept">Department</label>
+        <select id="f-dept" name="department" required>
+          <option value="" disabled selected>Select a department</option>
+          <option>Cardiology</option>
+          <option>Neurology</option>
+          <option>Orthopaedics</option>
+          <option>Pediatrics</option>
+          <option>General Medicine</option>
+          <option>Oncology</option>
+        </select>
+        <span class="field-error" data-for="f-dept"></span>
+      </div>
+
+      <div class="form-row">
+        <label for="f-notes">Notes for the doctor <span class="optional">(optional)</span></label>
+        <textarea id="f-notes" name="notes" rows="3" placeholder="Briefly describe your symptoms or reason for visit"></textarea>
+      </div>
+
+      <button type="submit" class="btn btn-primary btn-full">Confirm Appointment</button>
+      <p class="form-success" id="form-success" role="status" aria-live="polite"></p>
+    </form>
+  </div>
+</section>
+
+<!-- ============ HEALTH PACKAGES ============ -->
+<section class="section section-tint" id="packages">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">Health packages</span>
+      <h2>Preventive care, packaged for your life stage.</h2>
+      <p>Comprehensive screening bundles with same-day results and a follow-up consultation included.</p>
+    </div>
+
+    <div class="package-grid">
+      <article class="package-card reveal">
+        <h3>Essential</h3>
+        <p class="package-desc">Annual wellness check for adults 18–40</p>
+        <p class="package-price">$149<span>/screening</span></p>
+        <ul>
+          <li>Full blood panel</li>
+          <li>Blood pressure &amp; BMI review</li>
+          <li>15-min GP consultation</li>
+        </ul>
+        <a href="#appointment" class="btn btn-outline btn-full">Choose Essential</a>
+      </article>
+
+      <article class="package-card package-featured reveal" data-reveal-delay="90">
+        <span class="package-tag">Most booked</span>
+        <h3>Complete</h3>
+        <p class="package-desc">Full-body screening with imaging</p>
+        <p class="package-price">$389<span>/screening</span></p>
+        <ul>
+          <li>Everything in Essential</li>
+          <li>ECG &amp; chest X-ray</li>
+          <li>Abdominal ultrasound</li>
+          <li>30-min specialist consultation</li>
+        </ul>
+        <a href="#appointment" class="btn btn-primary btn-full">Choose Complete</a>
+      </article>
+
+      <article class="package-card reveal" data-reveal-delay="180">
+        <h3>Executive</h3>
+        <p class="package-desc">Advanced diagnostics for 40+</p>
+        <p class="package-price">$649<span>/screening</span></p>
+        <ul>
+          <li>Everything in Complete</li>
+          <li>Cardiac stress test</li>
+          <li>Tumour marker panel</li>
+          <li>Dedicated care coordinator</li>
+        </ul>
+        <a href="#appointment" class="btn btn-outline btn-full">Choose Executive</a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ TESTIMONIALS ============ -->
+<section class="section" id="testimonials">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">Patient stories</span>
+      <h2>What it feels like to be cared for here.</h2>
+    </div>
+
+    <div class="testimonial-wrap reveal">
+      <div class="testimonial-track" id="testimonial-track">
+        <figure class="testimonial-card">
+          <blockquote>“From check-in to discharge, everything felt coordinated. My care team already had my history before I said a word.”</blockquote>
+          <figcaption><strong>Sarah Malik</strong><span>Cardiology patient</span></figcaption>
+        </figure>
+        <figure class="testimonial-card">
+          <blockquote>“The health package caught something my previous checkups missed. I'm genuinely grateful for how thorough it was.”</blockquote>
+          <figcaption><strong>David Okafor</strong><span>Executive package</span></figcaption>
+        </figure>
+        <figure class="testimonial-card">
+          <blockquote>“My son's surgery was explained clearly at every step. The pediatric wing felt calm, not clinical.”</blockquote>
+          <figcaption><strong>Priya Nair</strong><span>Pediatrics parent</span></figcaption>
+        </figure>
+      </div>
+      <div class="testimonial-dots" id="testimonial-dots"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FAQ ============ -->
+<section class="section section-tint" id="faq">
+  <div class="container faq-grid">
+    <div class="section-head faq-head reveal">
+      <span class="eyebrow">FAQ</span>
+      <h2>Answers before you ask.</h2>
+      <p>Can't find what you need? <a href="#contact" class="link-arrow-sm">Contact our team →</a></p>
+    </div>
+
+    <div class="faq-list reveal" data-reveal-delay="80">
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+          Do I need a referral to see a specialist?
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-answer"><p>No referral is required. You can book directly with any specialist through our appointment form or by calling our care line.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+          Which insurance providers do you accept?
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-answer"><p>We work with all major national insurers and offer direct billing. Our billing desk can verify your coverage before your visit.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+          Can I reschedule or cancel an appointment?
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-answer"><p>Yes — rescheduling is free up to 2 hours before your slot via the confirmation link sent to your email.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+          Is the emergency department open to walk-ins?
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-answer"><p>Yes, our emergency department is open 24/7 to walk-ins as well as ambulance arrivals, with immediate triage on arrival.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ BLOG ============ -->
+<section class="section" id="blog">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">From the journal</span>
+      <h2>Health insights, written by our own doctors.</h2>
+    </div>
+
+    <div class="blog-grid">
+      <article class="blog-card reveal">
+        <div class="blog-image blog-img-1" aria-hidden="true"></div>
+        <div class="blog-body">
+          <span class="blog-tag">Cardiology</span>
+          <h3>Five heart-health habits worth starting this year</h3>
+          <p>Small, sustainable changes that measurably lower cardiovascular risk over time.</p>
+          <a href="#" class="link-arrow-sm">Read article →</a>
+        </div>
+      </article>
+      <article class="blog-card reveal" data-reveal-delay="90">
+        <div class="blog-image blog-img-2" aria-hidden="true"></div>
+        <div class="blog-body">
+          <span class="blog-tag">Pediatrics</span>
+          <h3>A parent's guide to childhood vaccination schedules</h3>
+          <p>What to expect at each stage, and why timing matters more than people think.</p>
+          <a href="#" class="link-arrow-sm">Read article →</a>
+        </div>
+      </article>
+      <article class="blog-card reveal" data-reveal-delay="180">
+        <div class="blog-image blog-img-3" aria-hidden="true"></div>
+        <div class="blog-body">
+          <span class="blog-tag">General Medicine</span>
+          <h3>Why annual screenings catch what symptoms don't</h3>
+          <p>The case for preventive care, explained by our general medicine team.</p>
+          <a href="#" class="link-arrow-sm">Read article →</a>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CONTACT ============ -->
+<section class="section section-tint" id="contact">
+  <div class="container contact-grid">
+    <div class="contact-copy reveal">
+      <span class="eyebrow">Contact</span>
+      <h2>Visit, call, or write — we respond within the hour.</h2>
+      <div class="contact-info">
+        <div class="contact-item">
+          <strong>Address</strong>
+          <p>221 Harborview Avenue, Suite 400, Meridian City</p>
+        </div>
+        <div class="contact-item">
+          <strong>Phone</strong>
+          <p><a href="tel:+18005551234">+1 (800) 555-1234</a></p>
+        </div>
+        <div class="contact-item">
+          <strong>Email</strong>
+          <p><a href="mailto:care@meridianhealth.example">care@meridianhealth.example</a></p>
+        </div>
+        <div class="contact-item">
+          <strong>Hours</strong>
+          <p>Outpatient: Mon–Sat, 8am–8pm · Emergency: 24/7</p>
+        </div>
+      </div>
+    </div>
+
+    <form class="glass-card contact-form reveal" id="contact-form" data-reveal-delay="100" novalidate>
+      <h3>Send us a message</h3>
+      <div class="form-row">
+        <label for="c-name">Name</label>
+        <input id="c-name" type="text" placeholder="Your name" required>
+      </div>
+      <div class="form-row">
+        <label for="c-email">Email</label>
+        <input id="c-email" type="email" placeholder="you@email.com" required>
+      </div>
+      <div class="form-row">
+        <label for="c-message">Message</label>
+        <textarea id="c-message" rows="4" placeholder="How can we help?" required></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary btn-full">Send Message</button>
+      <p class="form-success" id="contact-success" role="status" aria-live="polite"></p>
+    </form>
+  </div>
+</section>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer">
+  <div class="container footer-grid">
+    <div class="footer-brand">
+      <a href="#top" class="brand">
+        <svg width="26" height="26" viewBox="0 0 56 56" fill="none" aria-hidden="true">
+          <path d="M2 30H14L20 14L28 42L34 22L38 30H54" stroke="#3FD0E0" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        <span>Meridian <em>Health</em></span>
+      </a>
+      <p>Premium multi-specialty care, built around the patient.</p>
+    </div>
+
+    <div class="footer-col">
+      <h4>Explore</h4>
+      <a href="#about">About</a>
+      <a href="#doctors">Doctors</a>
+      <a href="#departments">Departments</a>
+      <a href="#packages">Health Packages</a>
+    </div>
+    <div class="footer-col">
+      <h4>Patients</h4>
+      <a href="#appointment">Book Appointment</a>
+      <a href="#faq">FAQ</a>
+      <a href="#blog">Blog</a>
+      <a href="#contact">Contact</a>
+    </div>
+    <div class="footer-col">
+      <h4>Emergency</h4>
+      <a href="tel:+18005551234">+1 (800) 555-1234</a>
+      <p class="footer-note">Open 24 hours, every day</p>
+    </div>
+  </div>
+  <div class="container footer-bottom">
+    <p>© 2026 Meridian Health. All rights reserved.</p>
+    <div class="footer-legal">
+      <a href="#">Privacy Policy</a>
+      <a href="#">Terms of Service</a>
+    </div>
+  </div>
+</footer>
+
+<button id="back-to-top" aria-label="Back to top">
+  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 19V5M5 12l7-7 7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+</button>
+
+<script src="script.js"></script>
+</body>
+</html>
