@@ -112,7 +112,7 @@ export default function SiteContent() {
   <div className="container about-grid">
     <div className="about-visual reveal">
       <div className="about-frame">
-        <div className="about-block block-a"></div>
+        <img className="about-block block-a" src="/images/hospital-care.jpg" alt="Hospital exterior with its patient entrance" loading="lazy" />
         <div className="about-block block-b"></div>
         <div className="glass-card float-card">
           <p className="fc-label">Accredited</p>
@@ -167,7 +167,7 @@ export default function SiteContent() {
 
     <div className="doctor-grid">
       <article className="doctor-card reveal">
-        <div className="doctor-photo dp-1" aria-hidden="true"></div>
+        <img className="doctor-photo dp-1" src="/images/physician-female-01.jpg" alt="Physician in a white coat outdoors" loading="lazy" />
         <div className="doctor-body">
           <h3>Dr. Amara Ellison</h3>
           <p className="doctor-role">Cardiology · Senior Consultant</p>
@@ -180,7 +180,7 @@ export default function SiteContent() {
       </article>
 
       <article className="doctor-card reveal" data-reveal-delay="90">
-        <div className="doctor-photo dp-2" aria-hidden="true"></div>
+        <img className="doctor-photo dp-2" src="/images/physician-male-01.jpg" alt="Physician in a white coat" loading="lazy" />
         <div className="doctor-body">
           <h3>Dr. Rohan Kapoor</h3>
           <p className="doctor-role">Neurology · Head of Department</p>
@@ -193,7 +193,7 @@ export default function SiteContent() {
       </article>
 
       <article className="doctor-card reveal" data-reveal-delay="180">
-        <div className="doctor-photo dp-3" aria-hidden="true"></div>
+        <img className="doctor-photo dp-3" src="/images/physician-female-02.jpg" alt="Physician wearing teal scrubs" loading="lazy" />
         <div className="doctor-body">
           <h3>Dr. Leila Farouk</h3>
           <p className="doctor-role">Pediatrics · Senior Consultant</p>
@@ -206,7 +206,7 @@ export default function SiteContent() {
       </article>
 
       <article className="doctor-card reveal" data-reveal-delay="270">
-        <div className="doctor-photo dp-4" aria-hidden="true"></div>
+        <img className="doctor-photo dp-4" src="/images/physician-male-02.jpg" alt="Physician wearing blue scrubs" loading="lazy" />
         <div className="doctor-body">
           <h3>Dr. Marcus Chen</h3>
           <p className="doctor-role">Orthopaedics · Consultant Surgeon</p>
@@ -481,7 +481,7 @@ export default function SiteContent() {
 
     <div className="blog-grid">
       <article className="blog-card reveal">
-        <div className="blog-image blog-img-1" aria-hidden="true"></div>
+        <img className="blog-image blog-img-1" src="/images/heart-health.jpg" alt="Stethoscope on a medical chart" loading="lazy" />
         <div className="blog-body">
           <span className="blog-tag">Cardiology</span>
           <h3>Five heart-health habits worth starting this year</h3>
@@ -490,7 +490,7 @@ export default function SiteContent() {
         </div>
       </article>
       <article className="blog-card reveal" data-reveal-delay="90">
-        <div className="blog-image blog-img-2" aria-hidden="true"></div>
+        <img className="blog-image blog-img-2" src="/images/childhood-vaccination.jpg" alt="Medical supplies arranged with a stethoscope and tablets" loading="lazy" />
         <div className="blog-body">
           <span className="blog-tag">Pediatrics</span>
           <h3>A parent's guide to childhood vaccination schedules</h3>
@@ -499,7 +499,7 @@ export default function SiteContent() {
         </div>
       </article>
       <article className="blog-card reveal" data-reveal-delay="180">
-        <div className="blog-image blog-img-3" aria-hidden="true"></div>
+        <img className="blog-image blog-img-3" src="/images/preventive-screening.jpg" alt="Clinician using a computer with a stethoscope in the foreground" loading="lazy" />
         <div className="blog-body">
           <span className="blog-tag">General Medicine</span>
           <h3>Why annual screenings catch what symptoms don't</h3>
